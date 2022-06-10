@@ -23,3 +23,6 @@ class test_Perceptron(unittest.TestCase):
         for row in dataset:
             prediction = codebase.predict(row, weights)
             self.assertAlmostEqual(row[-1], prediction)
+
+    def test_dummy(self):
+        assert 1 == 1
